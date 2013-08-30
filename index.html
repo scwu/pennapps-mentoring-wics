@@ -56,6 +56,7 @@
 
     <!-- Carousel
     ================================================== -->
+    
     <div id="myCarousel" class="carousel slide">
         <div class="item">
           <div class="container">
@@ -64,7 +65,7 @@
                 <h2 class="sponsor">BROUGHT TO YOU BY WOMEN IN COMPUTER SCIENCE @ PENN</h2>
                 <hr/>
               <p>Never hacked before? We'll teach you. No experience necessary.</p>
-              <p><a class="btn btn-large btn-primary" href="#">Sign Up</a></p>
+              <p><a class="btn btn-large btn-primary" href="#signup">Sign Up</a></p>
             </div>
           </div>
         </div>
@@ -176,13 +177,13 @@
               <div class="specific"><span class="glyphicon glyphicon-asterisk"></span> INTERESTED IN BEING A MENTOR? EMAIL <a class="link"  href="mailto:s.clara.wu@gmail.com?Subject=PennApps%20Mentor" target="_blank">CLARA</a>.</div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="signup_form">
           <form role="form">
               <div class="form-group">
                 <input type="text" id="name" class="form-control" placeholder="Full Name" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="year" placeholder="Year/Grade" required>
+                <input type="text"  class="form-control" id="year" placeholder="Year/Grade" required>
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" id="major" placeholder="Major" required>
@@ -191,9 +192,9 @@
                 <input type="email" class="form-control" id="email" placeholder="Email" required>
               </div>
               <div class="form-group">
-                <textarea type="text" class="form-control" rows="5" placeholder="Write a sentence or two about your relevant programming experience. This doesn't matter, we're just using it to design the talks appropriately."></textarea>
+                <textarea type="text" id="comments" class="form-control" rows="5" placeholder="Write a sentence or two about your relevant programming experience. This doesn't matter, we're just using it to design the talks appropriately."></textarea>
               </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" id="pennapps-mentor-submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
@@ -218,6 +219,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/holder.js"></script>
+      <script src="js/script.js"></script>
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
 </html>
